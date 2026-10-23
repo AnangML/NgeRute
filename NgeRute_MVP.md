@@ -1,4 +1,4 @@
-# JalurAja — MVP Web App Specification
+# NgeRute — MVP Web App Specification
 
 > **Tagline:** Bandingkan rute KRL, MRT, LRT, bus, dan jalan kaki dalam satu pencarian.  
 > **Wilayah awal:** Jakarta dan Jabodetabek  
