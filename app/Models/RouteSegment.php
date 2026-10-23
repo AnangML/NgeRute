@@ -19,6 +19,7 @@ final class RouteSegment extends Model
         'sequence_order',
         'distance_meters',
         'duration_seconds',
+        'path_coordinates',
     ];
 
     /**
@@ -30,6 +31,7 @@ final class RouteSegment extends Model
             'sequence_order' => 'integer',
             'distance_meters' => 'integer',
             'duration_seconds' => 'integer',
+            'path_coordinates' => 'array',
         ];
     }
 

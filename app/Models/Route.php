@@ -18,6 +18,7 @@ final class Route extends Model
         'operator_id',
         'code',
         'name',
+        'headsign',
         'mode',
         'color_hex',
         'is_active',

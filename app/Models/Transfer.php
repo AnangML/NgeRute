@@ -20,6 +20,7 @@ final class Transfer extends Model
         'walking_duration_seconds',
         'transfer_type',
         'source_notes',
+        'path_coordinates',
         'verified_at',
     ];
 
@@ -32,6 +33,7 @@ final class Transfer extends Model
             'walking_distance_meters' => 'integer',
             'walking_duration_seconds' => 'integer',
             'transfer_type' => TransferType::class,
+            'path_coordinates' => 'array',
             'verified_at' => 'date',
         ];
     }

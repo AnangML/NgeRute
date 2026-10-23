@@ -18,54 +18,46 @@ NgeRute dirancang dengan mengedepankan **pengalaman seperti aplikasi navigasi ke
 
 ---
 
-## 2. Sistem Warna (Color Palette & Tokens)
+## 2. Sistem Warna Modern & Minimalis (Aturan 60-30-10)
 
-### 2.1 UI Foundation (Dark & Light Theme Tokens)
+Untuk menciptakan antarmuka yang bersih, elegan, dan tidak berantakan (*visual clutter-free*), NgeRute menerapkan **Aturan Warna 60-30-10**:
+
+- **60% Warna Dominan (Kanvas & Latar Belakang):**
+  - Surface base cerah dan bersih: `#F8FAFC` (Slate 50) & Frosted Glass `rgba(255, 255, 255, 0.92)`.
+  - Ruang bernapas (*whitespace*) luas tanpa garis pembatas tebal yang mengganggu.
+- **30% Warna Sekunder (Struktur, Tipografi, & Kartu):**
+  - Charcoal / Slate dalam: `#0F172A` (Slate 900) untuk teks utama, `#475569` untuk teks pendukung, dan border halus `#E2E8F0` / `#CBD5E1`.
+  - Digunakan untuk hierarki konten, card background, dan chip netral agar tampilan terkesan matang dan kokoh.
+- **10% Warna Aksen (Fokus & Interaksi Kunci):**
+  - *Electric Sky Blue* `#0284C7` (dengan hover `#0369A1`).
+  - Digunakan secara selektif dan berdampak tinggi hanya untuk tombol aksi utama (*Primary CTA*), ring fokus aktif, pin asal, dan highlight angka durasi tercepat.
 
 ```css
 :root {
-  /* Brand / Primary */
-  --color-brand-primary: #0284c7;        /* Sky 600 - Dynamic Transit Blue */
-  --color-brand-primary-hover: #0369a1;  /* Sky 700 */
-  --color-brand-accent: #0ea5e9;         /* Sky 500 */
-  --color-brand-surface: #f0f9ff;        /* Sky 50 */
-
-  /* Neutral & Surfaces */
-  --bg-app: #f8fafc;                     /* Slate 50 */
-  --surface-panel: rgba(255, 255, 255, 0.92);
-  --surface-panel-border: rgba(226, 232, 240, 0.8);
+  /* 60% — Dominant Canvas & Clean Whitespace */
+  --color-dominant-bg: #f8fafc;
+  --surface-glass: rgba(255, 255, 255, 0.92);
   --surface-card: #ffffff;
-  --surface-card-hover: #f1f5f9;
-  --surface-card-active: #e2e8f0;
+  --surface-card-subtle: #f8fafc;
 
-  /* Text Hierarchies */
-  --text-main: #0f172a;                  /* Slate 900 - High contrast */
-  --text-muted: #475569;                 /* Slate 600 */
-  --text-faint: #94a3b8;                 /* Slate 400 */
-  --text-inverse: #ffffff;
+  /* 30% — Secondary Structure & Typography */
+  --color-secondary-text: #0f172a;
+  --color-secondary-muted: #475569;
+  --color-secondary-border: #e2e8f0;
+  --color-secondary-border-hover: #cbd5e1;
 
-  /* Status & Badges */
-  --badge-fastest-bg: #dcfce7;           /* Emerald 100 */
-  --badge-fastest-text: #166534;         /* Emerald 800 */
-  --badge-cheapest-bg: #fef9c3;          /* Amber 100 */
-  --badge-cheapest-text: #854d0e;        /* Amber 800 */
-  --badge-leastwalk-bg: #e0e7ff;         /* Indigo 100 */
-  --badge-leastwalk-text: #3730a3;       /* Indigo 800 */
-  --badge-transfer-bg: #f3e8ff;          /* Purple 100 */
-  --badge-transfer-text: #6b21a8;        /* Purple 800 */
+  /* 10% — Precise Accent (Action & Focus) */
+  --color-accent: #0284c7;
+  --color-accent-hover: #0369a1;
+  --color-accent-subtle: rgba(2, 132, 199, 0.08);
 
-  /* Glassmorphism & Shadow Depth */
-  --panel-blur: blur(16px);
-  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
-  --shadow-float: 0 20px 25px -5px rgba(15, 23, 42, 0.12), 0 8px 10px -6px rgba(15, 23, 42, 0.08);
-
-  /* Border Radii */
-  --radius-sm: 8px;
-  --radius-md: 12px;
-  --radius-lg: 16px;
-  --radius-xl: 24px;
-  --radius-full: 9999px;
+  /* Shadows & Radius */
+  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(15, 23, 42, 0.07);
+  --shadow-floating: 0 20px 25px -5px rgba(15, 23, 42, 0.1);
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 18px;
 }
 ```
 
