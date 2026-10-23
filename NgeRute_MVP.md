@@ -6,7 +6,7 @@
 
 ## 1. Ringkasan Produk
 
-JalurAja adalah web app pembanding perjalanan antarmoda. Pengguna memasukkan lokasi asal dan tujuan, lalu aplikasi menampilkan beberapa pilihan perjalanan berdasarkan estimasi waktu, tarif, jumlah transit, dan jarak jalan kaki.
+NgeRute adalah web app pembanding perjalanan antarmoda. Pengguna memasukkan lokasi asal dan tujuan, lalu aplikasi menampilkan beberapa pilihan perjalanan berdasarkan estimasi waktu, tarif, jumlah transit, dan jarak jalan kaki.
 
 ### Masalah yang ingin diselesaikan
 
